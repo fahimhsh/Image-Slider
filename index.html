@@ -23,11 +23,13 @@
       <div class="relative">
         <button
           id="prev-slide"
-          class="slide-button material-symbols-rounded pointer absolute -left-6 top-1/2 hidden h-12 w-12 -translate-y-1/2 rounded-full border-none bg-black text-4xl text-white outline-none duration-300 hover:bg-slate-600 sm:block"
+          class="slide-button material-symbols-rounded pointer absolute -left-6 top-1/2 h-12 w-12 -translate-y-1/2 rounded-full border-none bg-black text-4xl text-white outline-none duration-300 hover:bg-slate-600 sm:block"
         >
           chevron_left
         </button>
-        <div class="mb-4 flex gap-3 overflow-x-auto sm:mb-7 sm:gap-image-gap">
+        <div
+          class="image-list mb-4 flex gap-3 overflow-x-auto sm:mb-7 sm:gap-image-gap"
+        >
           <img
             src="images/img-1.jpg"
             class="h-64 w-72 object-cover sm:h-96 sm:w-80"
@@ -80,10 +82,10 @@
         class="slide-scrollbar group flex h-6 w-full items-center duration-200"
       >
         <div
-          class="scrollbar-track relative h-0.5 w-full rounded bg-gray-400 duration-200 group-hover:h-2"
+          class="scrollbar-track relative h-0.5 w-full rounded bg-gray-400 duration-200 group-hover:h-2 group-active:h-2"
         >
           <div
-            class="scrollbar-thumb absolute h-full w-1/5 rounded bg-black duration-200 active:cursor-grabbing sm:w-1/2"
+            class="scrollbar-thumb absolute h-full w-1/5 rounded bg-black duration-200 hover:cursor-grabbing sm:w-1/2"
           ></div>
         </div>
       </div>
